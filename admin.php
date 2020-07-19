@@ -84,7 +84,7 @@
 	function displaySubjects()
 	{
 		// establish database connection 
-		$con = mysqli_connect("localhost", "phpuser", "GnsKV{Yf", "qrShare");
+		$con = mysqli_connect("localhost", "phpuser", "password", "dbName");
 		
 		// Get all available school subjects 
 		$sql = "SELECT * FROM tbl_subjectList";
