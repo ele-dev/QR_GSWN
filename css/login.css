@@ -1,0 +1,73 @@
+
+p 
+{
+	margin: 4px;
+}
+
+input[type=submit] {
+	cursor: pointer;
+	margin-bottom: 2em;
+}
+
+input[type=submit]:hover
+{
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+input[type=password], [type=text] 
+{
+	width: 40%;
+	margin-bottom: 1em;
+}
+
+input[type=password], [type=submit], [type=text]
+{
+	padding: 6px;
+	border-radius: 5px;
+}
+
+#pageLogo
+{
+	width: 20%;
+	height: 20%;
+	
+	min-width: 300px;
+}
+
+.login_container
+{
+	width: 60%;
+	padding: 2em;
+	
+	background-color: white;
+	
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
+}
+
+/* mobile version for portrait screen orientaion */
+@media only screen and (max-width: 950px)
+{
+	form 
+	{
+		width: 85%;
+		padding: 1em;
+		vertical-align: middle;
+	}
+	
+	.loginContainer
+	{
+		width: 85%;
+		vertical-align: middle;
+	}
+	
+	input[type=password], [type=text]
+	{
+		width: 100%;
+		padding: 6px;
+		border-radius: 5px;
+	}
+}

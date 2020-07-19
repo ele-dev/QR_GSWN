@@ -1,0 +1,25 @@
+/* All the standard styles for the most common tags */
+
+body
+{
+	background-color: white;
+	color: black;
+	
+	text-align: center;
+	font-family: Arial;
+}
+
+H2 
+{
+	text-decoration: underline;
+}
+
+footer
+{
+	width: 100%;
+	float: bottom;
+}
+
+
+
+

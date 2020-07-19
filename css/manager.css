@@ -1,0 +1,190 @@
+input
+{
+	border-radius: 5px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+	font-weight: bold;
+}
+
+input[type=text]
+{
+	width: 60%;
+}
+
+select
+{
+	border-radius: 5px;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+.bar-grid > span
+{
+	width: 80%;
+}
+
+#create 
+{
+	color: white;
+	background-color: green;
+}
+
+input.remove
+{
+	color: white;
+	background-color: red;
+}
+
+.tooltip
+{
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext
+{
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: white;
+	opacity: 0.8;
+	
+	text-align: center;
+	border-radius: 5px;
+	
+	padding: 5px;
+	
+	position: absolute;
+	z-index: 1;
+	
+	top: 30px;
+	left: 120%;
+}
+
+.tooltip:hover .tooltiptext 
+{
+	visibility: visible;
+}
+
+.tooltip:hover img.qrImg
+{
+	box-shadow: 8px 8px 5px grey;
+}
+
+img.qrImg
+{
+	width: 9em;
+	height: 9em;
+	
+	border-radius: 10px;
+}
+
+a
+{
+	color: blue;
+}
+
+/* grid system */
+
+/* standard conditions/desktop view with 3 columns */
+.grid-container
+{
+	display: grid;
+	
+	grid-column-gap: 1.5em;
+	grid-row-gap: 1.5em;
+	grid-template-columns: auto auto auto;
+	
+	padding: 10px;
+	margin-top: 1em;
+}
+
+.grid-item
+{
+	background-color: lightgrey;
+	text-align: center;
+	padding: 1.4em;
+	
+	box-shadow: 8px 8px 5px lightblue;
+}
+
+.bar-grid
+{
+	display: grid;
+	
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	grid-template-columns: auto auto auto;	
+}
+
+/* tablet view with 2 grid cloumns */
+@media only screen and (max-width: 1300px) 
+{
+	.grid-container
+	{
+		display: grid;
+		
+		grid-column-gap: 1.5em;
+		grid-row-gap: 1.5em;
+		grid-template-columns: auto auto;
+		
+		padding: 10px;
+	}
+
+	.grid-item
+	{
+		background-color: lightgrey;
+		text-align: center;
+		padding: 1.4em;
+		
+		box-shadow: 8px 8px 5px lightblue;
+	}
+	
+	.bar-grid
+	{
+		display: grid;
+	
+		grid-template-columns: auto auto auto;
+	}
+}
+
+/* mobil view with one single column */
+@media only screen and (max-width: 950px)
+{
+	.grid-container
+	{
+		display: grid;
+		
+		grid-column-gap: 1.5em;
+		grid-row-gap: 1.5em;
+		grid-template-columns: auto;
+		
+		padding: 10px;
+	}
+
+	.grid-item
+	{
+		background-color: lightgrey;
+		text-align: center;
+		padding: 1.4em;
+		
+		box-shadow: 8px 8px 5px lightblue;
+	}
+	
+	.bar-grid
+	{
+		display: grid;
+	
+		grid-row-gap: 0.5em;
+		grid-template-columns: auto;
+		grid-template-rows: auto auto auto;
+		
+		text-align: left;
+	}
+}
+
+
