@@ -24,7 +24,7 @@
 		// define the query
 		$sql = "SELECT * FROM tbl_userAccounts WHERE username='" . htmlspecialchars($user) . "' AND login_password_hash='" . htmlspecialchars($pass_hash) . "'";
 		
-		// Exeute the query and store the result
+		// Execute the query and store the result
 		$result = mysqli_query($con, $sql);
 		
 		// close the db connection 
@@ -48,7 +48,7 @@
 		// define the query
 		$sql = "SELECT * FROM tbl_userAccounts";
 		
-		// Exeute the query and store the result
+		// Execute the query and store the result
 		$result = mysqli_query($con, $sql);
 		
 		// close the db connection 
