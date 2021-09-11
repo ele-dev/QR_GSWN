@@ -12,10 +12,11 @@
 		exit;
 	}
 	
+	// Fetches existing username(s) that match the input
 	function outputOptions($str)
 	{
 		// connect to the local DB server
-		$con = mysqli_connect("localhost", "phpuser", "GnsKV{Yf", "qrShare");
+		$con = mysqli_connect("localhost", "phpuser", "password", "dbName");
 		
 		// Get all the usernames available
 		$sql = "SELECT username FROM tbl_userAccounts";
@@ -44,8 +45,7 @@
 		}
 	}
 	
-	// Call the function 
+	// Call the function to print out the matches
 	outputOptions($userInput);
 	
-
 ?>

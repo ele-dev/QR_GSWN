@@ -34,7 +34,7 @@
 	function displaySharedFiles($user, $order, $fileFilter, $subjectFilter, $search)
 	{
 		// First establish a database connection_aborted
-		$con = mysqli_connect("localhost", "phpuser", "GnsKV{Yf", "qrShare");
+		$con = mysqli_connect("localhost", "phpuser", "password", "dbName");
 		
 		// construct the SQL query based on the order method and the current user 
 		$sqlQuery = "";
